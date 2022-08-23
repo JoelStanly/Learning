@@ -19,6 +19,10 @@ Native mobile and desktop applications
 
 - [Course Material](../Javascript/course-material-v2.1/)
 
+### **_Course Assignments and Challenges_**
+
+- [Assignments](../Javascript/Assignments/)
+
 ### **_Informations_**
 
 **_Commenting_**
@@ -30,3 +34,19 @@ Native mobile and desktop applications
 **_Data Type_**
 
     typeof variable
+
+**_Type Conversion and Coercion_**
+
+_Conversion_
+
+    Number("23") -> 23
+    String(23) -> "23"
+
+_Coercion_
+
+    console.log("23" + "1") -> "231"
+    console.log("23" - "1") -> 22
+
+**_Falsy Values_**
+
+    0 , '' , null , undefined, NaN
