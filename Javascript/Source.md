@@ -20,3 +20,13 @@ Native mobile and desktop applications
 - [Course Material](../Javascript/course-material-v2.1/)
 
 ### **_Informations_**
+
+**_Commenting_**
+
+-     // - For single line comment
+
+-     /* */ - For multi line comment
+
+**_Data Type_**
+
+    typeof variable
