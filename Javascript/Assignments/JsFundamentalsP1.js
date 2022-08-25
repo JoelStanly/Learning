@@ -106,4 +106,4 @@ switch(language){
 //population = 13;
 //population = 130;
 
-console.log(`${country}'s population is ${population>averagePopulation?"above":"below"} average`)
+console.log(`${country}'s population is ${population>averagePopulation?"above":"below"} average`);
