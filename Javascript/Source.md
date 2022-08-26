@@ -22,6 +22,7 @@ Native mobile and desktop applications
 ### **_Course Assignments and Challenges_**
 
 - [Assignments](../Javascript/Assignments/)
+- [Coding Challenges](../Javascript/Coding%20Challenges/)
 
 ### **_Informations_**
 
@@ -50,3 +51,30 @@ _Coercion_
 **_Falsy Values_**
 
     0 , '' , null , undefined, NaN
+
+**_Array Manipulation_**
+
+    arr.push(value) ->pushes value to the last of the array
+    arr.pop() -> removes the last element of the array
+    arr.unshift(value) -> pushes value to the first of the array
+    arr.shift() -> removes the first element of the array
+
+**_Three Function Definitions_**
+
+_Function Declaration_
+
+    function fnName(parameters){
+        codes;
+    }
+
+_Function Expression_
+
+    const fnName = function (parameters){
+        codes;
+    }
+
+_Arrow Function_
+
+    const fnName = (parameters) =>{
+        codes;
+    };
