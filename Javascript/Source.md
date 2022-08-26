@@ -26,6 +26,12 @@ Native mobile and desktop applications
 
 ### **_Informations_**
 
+**_Strict_**
+
+Always use strict on the top of the script
+
+    "use strict";
+
 **_Commenting_**
 
 -     // - For single line comment
