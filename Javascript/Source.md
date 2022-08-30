@@ -231,7 +231,7 @@ Sets have only unique elements and removes the duplicates
 
 Map provides the mapping between key and value
 
-    const mapName = new Map();
+    const mapName = new Map([[key,value],[key2,value2]]); Initialization
 
     mapName.set(key,value); sets the key value
 
@@ -244,3 +244,41 @@ Map provides the mapping between key and value
     mapName.size; provides the size
 
     mapName.clear(); clears the map
+
+**_Strings_**
+
+    let s = "String"
+
+    s.length; // Provides the length of the string
+
+    s.indexOf('t'); // Provides the index of the s
+
+    s.lastIndexOf('n'); // Provides the last index of n
+
+    s.slice(start,end); // Start to end index of strings
+
+    s.toLowerCase(); // LowerCases
+
+    s.toUpperCase(); // UpperCases
+
+    s.trim(); // Will remove white spaces
+
+    s.replace(old,new); // Replaces the old value to new value
+
+    s.replace(/S/g,"s"); // Replaces all S to s
+
+    s.includes(value); // checks if value is in s
+
+    s.startsWith(value); // checks if value is started for the s
+
+    s.endsWith(value); // check if s ends with value
+
+    s.split(value); // splits wherever the value is in s and returns the array
+
+    array.join(value); // joins every element in array with the value
+
+    s.padStart(number,value); // the length of the string will be the number and the remaining empty spots are padded with the value in the front - "so".padStart(4,".");  :: "..so"
+
+    s.padEnd(number,value); // the length of the string will be the number and the remaining empty spots are padded with the value in the end - "so".padEnd(4,".");  :: "so.."
+
+    s.repeat(number); // repeats the s for the number of times - "s".repeat(3);  :: "sss"
