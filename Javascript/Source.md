@@ -265,7 +265,7 @@ Map provides the mapping between key and value
 
     s.replace(old,new); // Replaces the old value to new value
 
-    s.replace(/S/g,"s"); // Replaces all S to s
+    s.replaceAll("S","s"); // Replaces all S to s
 
     s.includes(value); // checks if value is in s
 
@@ -282,3 +282,19 @@ Map provides the mapping between key and value
     s.padEnd(number,value); // the length of the string will be the number and the remaining empty spots are padded with the value in the end - "so".padEnd(4,".");  :: "so.."
 
     s.repeat(number); // repeats the s for the number of times - "s".repeat(3);  :: "sss"
+
+**_Call and apply method_**
+
+- If we want to use an objects method to another object then we can use that method to call for the other object.
+
+        object1.function.call(object2,arg1,arg2,..);
+
+- The apply method is used when we have the args in an array.
+
+        object1.function.apply(object2,[arg1,arg2,..]);
+
+**_Bind Method_**
+
+The bind method will create the object for that method and points to the method (when this keyword comes it points to the object)
+
+        object1.function.bind(object2,[optional args that are given as defaults]);
