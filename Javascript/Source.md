@@ -23,6 +23,7 @@ Native mobile and desktop applications
 
 - [Assignments](../Javascript/Assignments/)
 - [Coding Challenges](../Javascript/Coding%20Challenges/)
+- [Projects](../Javascript/Projects/)
 
 ### **_Informations_**
 
@@ -227,6 +228,8 @@ Sets have only unique elements and removes the duplicates
 
     setName.clear() will clears the set completely
 
+    setName.foreach(function(value,_,set){code;}); calls the function for each value
+
 **_Map_**
 
 Map provides the mapping between key and value
@@ -244,6 +247,8 @@ Map provides the mapping between key and value
     mapName.size; provides the size
 
     mapName.clear(); clears the map
+
+    mapName.foreach(function(value,key,map){code;}); calls the function for each value
 
 **_Strings_**
 
@@ -298,3 +303,45 @@ Map provides the mapping between key and value
 The bind method will create the object for that method and points to the method (when this keyword comes it points to the object)
 
         object1.function.bind(object2,[optional args that are given as defaults]);
+
+**_IIFE_**
+
+Immediately invoked function expression will be runned once by declaring and calling at the same time
+
+    // Function Expression
+    (function(){
+        code block;
+    })();
+
+    // Arrow Function
+    (() => {
+        code block;
+    })();
+
+These functions cannot be called again because they are not saved in a variable.
+
+P.S The whole function is within a () and then called with ().
+
+**_Set Time out_**
+
+Timeout Function
+
+    setTimeout(function(){code},milliseconds);
+
+**_Array_**
+
+    array.slice(start,end); // slices the array from start to end
+
+    array.splice(start,end); // splice is same as slice instead it removes the elements from the array itself
+
+    array.reverse(); // reverses the array
+
+    array1.concat(array2); // combines the arrays
+
+    array.join(string); // joins each elements with the string inbetween
+
+    array.at(position); // returns the element from the position
+
+    array.foreach(function(currentElement,index,entireArray){
+        code;
+    }); // Calls the function for each element in the array and get the current element,index and the whole array as arguments
