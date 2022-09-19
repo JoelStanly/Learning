@@ -1,8 +1,15 @@
 ### _**Courses**_
 
 1. [A Practical Introduction to Cloud Computing](https://cognizant.udemy.com/course/introduction-cloud-computing/learn/)
+2. [Introduction to Cloud Computing](https://cognizant.udemy.com/course/introduction-to-cloud-computing/learn)
 
-### **A Practical Introduction to Cloud Computing**
+### _**Documentations**_
+
+1. [AWS IOT](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
+
+## **A Practical Introduction to Cloud Computing**
+
+[Files](/Cognizant/IOT%20Engineer/Practical-Intro-to-Cloud-slides/)
 
 ### **_Traditional Deployment models_**
 
@@ -170,3 +177,116 @@ Everything is taken care by Provider and accessed on the application level
 - Private Cloud (Exclusive use by a single organization)
 - Community Cloud (Exclusive for a specific community)
 - Hybrid Cloud (Private cloud may 'cloud burst' into public cloud for additional capacity when required)
+
+## **Introduction to Cloud Computing**
+
+Same Info as the first course but in a summary
+
+## **_AWS IOT_**
+
+[Files](/Cognizant/IOT%20Engineer/Files/AWS%20IOT.pdf)
+
+### **What is an IOT**
+
+- AWS IoT provides the cloud services that connect your IoT devices to other devices and AWS cloud services
+
+- AWS IoT provides device software that can help you integrate your IoT devices into AWS IoT-based solutions
+
+_AWS IOT Supporting Protocols_
+
+- MQTT (Message Queuing and telementary)
+- MQTT over WSS (WebSockets Secure)
+- HTTPS (Hypertext Transfer Protocol - Secure)
+- LoRaWAN (Long Range Wide Area Network)
+
+_Access for AWS IOT_
+
+- AWS IoT Device SDKs
+- AWS IoT Core for LoRaWAN
+- AWS Command Line Interface(AWS CLI)
+- AWS IoT API
+- AWS SDKs
+
+#### **What IOT Can Do?**
+
+Examples:
+
+Iot In Industry
+
+- to build Predictive Quality models
+- to support Predictive maintainance
+
+in Industrial operations
+
+Iot In Home Automation
+
+- to connect home devices
+- home security and monitoring
+
+#### **How IOT Works?**
+
+![Iot Universe](/Cognizant/IOT%20Engineer/Pictures/iot-universe.png)
+
+- Apps gives the end user access to the Iot devices and features provided by the cloud services
+
+- Cloud services are distributed, large-scale data storage and processing services that are connected to the internet
+
+- Communication : Devices communicate to cloud services through various protocols and technologies(wifi, LoRaWAN, etc.,)
+
+- Devices are a type of hardware which manages the interface and communications(Arduino, Amazon sidewalk devices, etc.,)
+
+- Interface is a component which connects the device to the physical world
+  - User interfaces: Input- Keypad, Output- Monitor
+    - Components allows user and devices to communicate with each other
+  - Sensors: Humidity sensor, temperature sensor
+    - Components that measures something in the physical world in a way which the devices can understand
+  - Actuators: Stepper motor, relays
+    - Components that is used to control something in the physical world
+
+_AWS IoT services overview_
+
+![Architecture Diagram](./Pictures/Aws%20Iot%20architecture%20diagram.png)
+
+- _Device Software_
+
+  Provided to support Iot Devices
+
+  - AWS IoT Device SDKs - to efficiently connect your devices to AWS Iot
+
+  - AWS Device Tester - test automation tool for microcontrollers (For FreeRTOS and AWS Iot Greengrass)
+
+  - AWS Express Link - powers a range of hardware modules developed and offered by AWS Partners
+
+  - AWS Iot Greengrass - extends AWS IoT to edge devices so they can act locally on the data they generate and use the cloud for management, analytics, and durable storage
+
+  - Free RTOS - an open source, real-time operating system for microcontrollers that lets you include small, low-power edge devices in your IoT solution
+
+- _AWS IOT Control Services_
+
+  Connect to the AWS Iot services to manage the devices
+
+  - AWS Iot Core - enables connected devices to securely interact with cloud applications and other devices
+
+  - AWS Iot Core Device Advisor - for validating IoT devices during device software development
+
+  - AWS Iot Device Defender - continuously audits your IoT configurations to make sure that they aren’t deviating from security best practices
+
+  - AWS Iot Device Management - to track, monitor, and manage the plethora of connected devices that make up your device fleets
+
+- _AWS Iot Data Services_
+
+  Analyze the data from the devices in your IoT solution and take appropriate action by using the following AWS IoT services
+
+  - Amazon Kinesis Video Streams - allows you to stream live video from devices to the AWS Cloud
+
+  - Amazon Kinesis Video Streams with WebRTC - to securely live stream media or perform two-way audio or video interaction between any camera IoT device and WebRTC-compliant mobile or web players
+
+  - AWS Iot Events - detects and responds to events from IoT sensors and applications
+
+  - AWS IoT FleetWise - use to collect and transfer vehicle data to the cloud in near-real time
+
+  - AWS IoT SiteWise - collects, stores, organizes, and monitors data passed from industrial equipment
+
+  - AWS IoT TwinMaker - creates digital visualizations using measurements and analysis (builds operational digital twins of physical and digital systems)
+
+_AWS Iot Core Services_
