@@ -290,3 +290,43 @@ _AWS IoT services overview_
   - AWS IoT TwinMaker - creates digital visualizations using measurements and analysis (builds operational digital twins of physical and digital systems)
 
 _AWS Iot Core Services_
+
+AWS IoT Core provides the services that connect your IoT devices to the AWS Cloud so that other cloud services and applications can interact with your internet-connected devices
+
+![Iot Core Services](./Pictures/aws_iot_data_services.png)
+
+- AWS IoT Core messaging services
+
+  - Device gateway - enables devices to securely and efficiently communicate with AWS IoT(secured by secure protocols that use X.509 certificates)
+
+  - Message broker - Provides a secure mechanism for devices and AWS IoT applications to publish and receive messages from each other
+
+  - AWS IoT Core for LoRaWAN - AWS IoT Core for LoRaWAN makes it possible to set up a private LoRaWAN network by connecting your LoRaWAN devices and gateways to AWS without the need to develop and operate a LoRaWAN Network Server
+
+  - Rules engine - connects data from the message broker to other AWS IoT services for storage and additional processing
+
+- AWS IoT Core Control Services
+
+  - Custom Authentication service - You can define custom authorizers that allow you to manage your own authentication and authorization strategy using a custom authentication service and a Lambda function
+
+  - Device Provisioning service - provision devices using a template that describes the resources required for your device
+
+  - Group Registry - Groups allow you to manage several devices at once by categorizing them into groups
+
+  - Jobs service - Allows you to define a set of remote operations that are sent to and run on one or more devices connected to AWS IoT
+
+  - Registry - Organizes the resources associated with each device in the AWS Cloud
+
+  - Security and Identity service - Provides shared responsibility for security in the AWS Cloud
+
+- AWS IoT Core Data Services
+
+  - Device Shadow - A JSON document used to store and retrieve current state information for a device
+
+  - Device Shadow service - maintains a device's state so that applications can communicate with a device whether the device is online or not
+
+- AWS IoT Core support service
+
+  - Alexa Voice Service (AVS) Integration for AWS IoT - Brings Alexa Voice to any connected device
+
+  - Amazon Sidewalk Integration for AWS IoT Core - Amazon Sidewalk is a shared network that improves connectivity options to help devices work together better
